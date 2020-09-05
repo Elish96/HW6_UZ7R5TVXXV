@@ -1,7 +1,7 @@
 const http = require("http");
 const plate = require("./plate");
 
-const hostname = "127.0.0.1";
+
 const port=4000;
 const template="./template/index.html";
 
@@ -13,8 +13,8 @@ const server = http.createServer(async (req, res) => {
   res.end(data);
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, () => {
+  console.log(`Server running at http://127.0.0.1:${port}/`);
 });
 
 
