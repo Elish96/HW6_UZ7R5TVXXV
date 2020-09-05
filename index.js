@@ -2,7 +2,7 @@ const http = require("http");
 const plate = require("./plate");
 
 
-const port=4000;
+const port=process.env.PORT || 4000;
 const template="./template/index.html";
 
 const server = http.createServer(async (req, res) => {
