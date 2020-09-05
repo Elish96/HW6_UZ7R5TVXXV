@@ -7,6 +7,8 @@ const readFile = promisify(fs.readFile);
 // Template
 async function plate(path = "", data = {}) {
   let content = await readFile(path);
+
+  console.log(content.toString());
   return content;
 }
 
